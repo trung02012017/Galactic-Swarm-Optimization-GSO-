@@ -1,5 +1,7 @@
 import numpy as np
 import time
+import pandas as pd
+import os.path
 
 
 class PSO(object):
@@ -120,7 +122,8 @@ class GalacticSwarmOptimization(object):
 
         PSO1_list = None
         gBest = None
-        gBest_fitness_result = np.zeros((self.ep_max, 1))
+        gBest_fitness_result = np.zeros(self.ep_max)
+        run_time_each_epoch = np.zeros(self.ep_max)
 
         for i in range(self.ep_max):
             start_time = time.clock()
@@ -134,10 +137,12 @@ class GalacticSwarmOptimization(object):
                   ".............................."
                   "..............................".format(i))
             run_time = time.clock() - start_time
-            print("time for epoch {} is {}".format(i, run_time))
+            run_time_each_epoch[i] += run_time
+            avg_time_per_epoch = np.mean(run_time_each_epoch)
 
-        print(gBest)
         print(gBest_fitness_result)
+        print(run_time_each_epoch)
+        return gBest_fitness_result[-1], avg_time_per_epoch
 
 
 if __name__ == '__main__':
@@ -145,12 +150,49 @@ if __name__ == '__main__':
     dimension = 50
     range0 = -10
     range1 = 10
-    m = 20
-    n = 10
-    l1 = 50
-    l2 = 500
-    ep_max = 30
+    m_list = [15, 20, 25]
+    n_list = [5, 10]
+    l1_list = [50, 100]
+    l2_list = [500, 1000]
+    ep_max = 20
     c1, c2, c3, c4 = 2.05, 2.05, 2.05, 2.05
-    GSO = GalacticSwarmOptimization(dimension, range0, range1, m, n, l1, l2, ep_max, c1, c2, c3, c4)
-    subswarm_collection = GSO.init_population()
-    GSO.run(subswarm_collection)
+
+    def save_result(combination, gBest_fitnes, avg_time_per_epoch):
+        path = 'result.csv'
+        combination = [combination]
+        result = {
+            'combination': combination,
+            'gBest_fitness': format(gBest_fitnes, '.2e'),
+            'avg_time_per_epoch': round(avg_time_per_epoch, 2)
+        }
+
+        df = pd.DataFrame(result)
+        if not os.path.exists(path):
+            columns = ['combination [m, n, l1, l2, ep_max, c1, c2, c3, c4]', 'gBest_fitness', 'avg_time_per_epoch']
+            df.columns = columns
+            df.to_csv(path, index=False, columns=columns)
+        else:
+            with open(path, 'a') as csv_file:
+                df.to_csv(csv_file, mode='a', header=False, index=False)
+
+
+
+
+    combinations = []
+    for m in m_list:
+        for n in n_list:
+            for l1 in l1_list:
+                for l2 in l2_list:
+                    combination = [m, n, l1, l2, ep_max, c1, c2, c3, c4]
+                    combinations.append(combination)
+
+    for combination in combinations:
+        m = combination[0]
+        n = combination[1]
+        l1 = combination[2]
+        l2 = combination[3]
+
+        GSO = GalacticSwarmOptimization(dimension, range0, range1, m, n, l1, l2, ep_max, c1, c2, c3, c4)
+        subswarm_collection = GSO.init_population()
+        gBest_fitness, avg_time_per_epoch = GSO.run(subswarm_collection)
+        save_result(combination, gBest_fitness, avg_time_per_epoch)
