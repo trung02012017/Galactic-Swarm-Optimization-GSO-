@@ -2,6 +2,7 @@ import numpy as np
 import time
 import pandas as pd
 import os.path
+from copy import deepcopy
 
 
 class PSO(object):
@@ -22,6 +23,14 @@ class PSO(object):
 
     def get_fitness(self, particle):
         return sum([particle[i]**2 for i in range(0, self.varsize)])
+        # fitness = 0
+        # for j in range(self.varsize):
+        #     if j%2 == 0:
+        #        fitness += particle[j]**3
+        #     else:
+        #         fitness += particle[j]**2
+        # return fitness
+
 
     def set_gBest(self, gBest):
         self.gBest = gBest
@@ -54,9 +63,9 @@ class PSO(object):
                 fitness_pBest = self.get_fitness(self.pBest[i])
                 fitness_gBest = self.get_fitness(self.gBest)
                 if fitness_new_pos_i < fitness_pBest:
-                    self.pBest[i] = new_position_i
+                    self.pBest[i] = deepcopy(new_position_i)
                     if fitness_new_pos_i < fitness_gBest:
-                        self.gBest = new_position_i
+                        self.gBest = deepcopy(new_position_i)
                 self.velocity[i] = new_velocity_i
                 self.position[i] = new_position_i
         return self.gBest, self.get_fitness(self.gBest)
@@ -158,7 +167,7 @@ if __name__ == '__main__':
     c1, c2, c3, c4 = 2.05, 2.05, 2.05, 2.05
 
     def save_result(combination, gBest_fitnes, avg_time_per_epoch):
-        path = 'result.csv'
+        path = 'result1.csv'
         combination = [combination]
         result = {
             'combination': combination,
@@ -196,3 +205,6 @@ if __name__ == '__main__':
         subswarm_collection = GSO.init_population()
         gBest_fitness, avg_time_per_epoch = GSO.run(subswarm_collection)
         save_result(combination, gBest_fitness, avg_time_per_epoch)
+
+
+
