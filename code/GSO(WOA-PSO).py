@@ -4,141 +4,8 @@ import pandas as pd
 import os.path
 import math
 from copy import deepcopy
-
-class WhaleOptimizationAlgorithm(object):
-
-    def __init__(self, dimension, population_size, population, range0, range1, max_ep):
-        self.dimension = dimension      # dimension size
-        self.population_size = population_size
-        self.population = population
-        self.best_solution = np.random.uniform(range0, range1, dimension)
-        self.best_fitness = sum([self.best_solution[i]**2 for i in range(dimension)])
-        self.range0 = range0
-        self.range1 = range1
-        self.max_ep = max_ep
-
-    def get_fitness(self, particle):
-        return sum([particle[i]**2 for i in range(self.dimension)])
-
-    def get_prey(self):
-        population_fitness = [self.get_fitness(whale) for whale in self.population]
-        min_index = np.argmin(population_fitness)
-        return self.population[min_index], np.amin(population_fitness)
-
-    def shrink_encircling(self, current_whale, best_solution, C, A):
-        D = np.abs(C*best_solution - current_whale)
-        return best_solution - A*D
-
-    def update_following_spiral(self, current_whale, best_solution, b, l):
-        D = np.abs(best_solution - current_whale)
-        return D*np.exp(b*l)*np.cos(2*np.pi*l) + best_solution
-
-    def explore_new_prey(self, current_whale, C, A):
-        random_whale = np.random.uniform(self.range0, self.range1, self.dimension)
-        D = np.abs(C*random_whale - current_whale)
-        return random_whale - A*D
-
-    def evaluate_population(self, population):
-
-        population = np.maximum(population, self.range0)
-        for i in range(self.population_size):
-            for j in range(self.dimension):
-                if population[i, j] > self.range1:
-                    population[i, j] = np.random.uniform(range1-1, range1, 1)
-
-        return population
-
-    def run(self):
-        b = 1
-        for epoch_i in range(self.max_ep):
-            for i in range(self.population_size):
-                current_whale = self.population[i]
-                a = 1.5 - 1.5*epoch_i/self.max_ep
-                # a = np.random.uniform(0, 2, 1)
-                # a = 2*np.cos(epoch_i/self.max_ep)
-                # a = math.log((4 - 3*epoch_i/(self.max_ep+1)), 2)
-
-                a2 = -1 + epoch_i*((-1)/self.max_ep)
-                r1 = np.random.random(1)
-                r2 = np.random.random(1)
-                A = 2*a*r1 - a
-                C = 2*r2
-                l = (a2 - 1)*np.random.random(1) + 1
-                p = np.random.random(1)
-                if p < 0.5:
-                    if np.abs(A) < 1:
-                        updated_whale = self.shrink_encircling(current_whale, self.best_solution, C, A)
-                    else:
-                        updated_whale = self.explore_new_prey(current_whale, C, A)
-                else:
-                    updated_whale = self.update_following_spiral(current_whale, self.best_solution, b, l)
-                # updated_whale = self.update_Levy(updated_whale)
-                self.population[i] = updated_whale
-
-            self.population = self.evaluate_population(self.population)
-            # self.best_solution, self.best_fitness = self.get_prey(population)
-            new_best_solution, new_best_fitness = self.get_prey()
-            if new_best_fitness < self.best_fitness:
-                self.best_solution = deepcopy(new_best_solution)
-                self.best_fitness = deepcopy(new_best_fitness)
-        return self.best_solution, self.get_fitness(self.best_solution)
-
-class PSO(object):
-
-    def __init__(self, varsize, swarmsize, position, epochs, range0, range1, c1, c2):
-        self.varsize = varsize
-        self.swarmsize = swarmsize
-        self.epochs = epochs
-        self.range0 = range0
-        self.range1 = range1
-        self.c1 = c1
-        self.c2 = c2
-        self.position = position
-        self.velocity = np.zeros((swarmsize, varsize))
-        self.pBest = position
-        self.gBest = np.random.uniform(range0, range1, varsize)
-        self.temp = self.gBest
-
-    def get_fitness(self, particle):
-        return sum([particle[i]**2 for i in range(0, self.varsize)])
-
-    def set_gBest(self, gBest):
-        self.gBest = gBest
-
-    def run(self):
-
-        v_max = 10
-        w_max = 0.9
-        w_min = 0.4
-        for iter in range(self.epochs):
-            w = (self.epochs - iter) / self.epochs * (w_max - w_min) + w_min
-            # w = 1 - iter/(self.epochs + 1)
-            for i in range(self.swarmsize):
-                r1 = np.random.random()
-                r2 = np.random.random()
-                position_i = self.position[i]
-                new_velocity_i = w*self.velocity[i] \
-                                 + self.c1*r1*(self.pBest[i] - position_i) \
-                                 + self.c2*r2*(self.gBest - position_i)
-                new_velocity_i = np.maximum(new_velocity_i, -0.1 * v_max)
-                new_velocity_i = np.minimum(new_velocity_i, 0.1 * v_max)
-                new_position_i = position_i + new_velocity_i
-
-                new_position_i = np.maximum(new_position_i, self.range0)
-                for j in range(self.varsize):
-                    if new_position_i[j] > self.range1:
-                        new_position_i[j] = np.random.uniform(self.range1 - 1, self.range1, 1)
-
-                fitness_new_pos_i = self.get_fitness(new_position_i)
-                fitness_pBest = self.get_fitness(self.pBest[i])
-                fitness_gBest = self.get_fitness(self.gBest)
-                if fitness_new_pos_i < fitness_pBest:
-                    self.pBest[i] = deepcopy(new_position_i)
-                    if fitness_new_pos_i < fitness_gBest:
-                        self.gBest = deepcopy(new_position_i)
-                self.velocity[i] = new_velocity_i
-                self.position[i] = new_position_i
-        return self.gBest, self.get_fitness(self.gBest)
+from PSO import PSO
+from WOA import WhaleOptimizationAlgorithm
 
 
 class GalacticSwarmOptimization(object):
@@ -243,8 +110,8 @@ if __name__ == '__main__':
     range1 = 10
     m_list = [15, 20, 25]
     n_list = [5, 10]
-    l1_list = [20, 50]
-    l2_list = [150, 200, 400]
+    l1_list = [20, 30]
+    l2_list = [150, 200, 300]
     ep_max = 10
     c1, c2, c3, c4 = 2.05, 2.05, 2.05, 2.05
 
