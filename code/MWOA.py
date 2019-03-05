@@ -68,7 +68,7 @@ class ModifiedWOA(object):
         return current_whale + math.sqrt(epoch_i)*np.sign(np.random.random(1) - 0.5)*levy
 
     def crossover(self, population):
-        partner_index = np.random.randint(0, self.dimension)
+        partner_index = np.random.randint(0, self.population_size)
         partner = population[partner_index]
 
         start_point = np.random.randint(0, self.dimension/2)
@@ -87,6 +87,7 @@ class ModifiedWOA(object):
     def run(self):
         b = 1
         for epoch_i in range(self.max_ep):
+            population = self.population
             for i in range(self.population_size):
                 current_whale = self.population[i]
                 a = 1.5 - 1.5*epoch_i/self.max_ep
@@ -101,13 +102,17 @@ class ModifiedWOA(object):
                 C = 2*r2
                 l = (a2 - 1)*np.random.random(1) + 1
                 p = np.random.random(1)
+                p1 = np.random.random(1)
                 if p < 0.5:
                     if np.abs(A) < 1:
                         updated_whale = self.shrink_encircling_Levy(current_whale, self.best_solution, epoch_i, C)
                     else:
                         updated_whale = self.explore_new_prey(current_whale, C, A)
                 else:
+                    if p1 < 0.6:
                         updated_whale = self.update_following_spiral(current_whale, self.best_solution, b, l)
+                    else:
+                        updated_whale = self.crossover(self.population)
                 self.population[i] = updated_whale
 
             self.population = self.evaluate_population(self.population)
