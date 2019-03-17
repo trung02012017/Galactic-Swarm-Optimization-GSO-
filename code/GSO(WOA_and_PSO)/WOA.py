@@ -17,7 +17,6 @@ class WhaleOptimizationAlgorithm(object):
 
     def get_fitness(self, particle):
         return sum([particle[i]**2 for i in range(self.dimension)])
-
     def set_best_solution(self, best_solution):
         self.best_solution = best_solution
 
@@ -77,7 +76,7 @@ class WhaleOptimizationAlgorithm(object):
                 self.population[i] = updated_whale
 
             self.population = self.evaluate_population(self.population)
-            # self.best_solution, self.best_fitness = self.get_prey(population)
+            # self.best_solution, self.best_fitness = deepcopy(self.get_prey())
             new_best_solution, new_best_fitness = self.get_prey()
             if new_best_fitness < self.best_fitness:
                 self.best_solution = deepcopy(new_best_solution)
@@ -92,7 +91,7 @@ if __name__ == '__main__':
     population_size = 100
     range0 = -10
     range1 = 10
-    max_ep = 1000
+    max_ep = 100
 
     population = ([np.random.uniform(range0, range1, dimension) for _ in range(population_size)])
     WOA = WhaleOptimizationAlgorithm(dimension, population_size, population, range0, range1, max_ep)

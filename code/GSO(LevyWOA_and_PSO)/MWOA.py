@@ -65,7 +65,7 @@ class ModifiedWOA(object):
         LB = 0.01*a/(math.pow(np.abs(b), 1/beta))*(C*current_whale - best_solution)
         D = np.random.uniform(self.range0, self.range1, 1)
         levy = LB*D
-        return current_whale + math.sqrt(epoch_i)*np.sign(np.random.random(1) - 0.5)*levy
+        return (current_whale + math.sqrt(epoch_i)*np.sign(np.random.random(1) - 0.5))*levy
 
     def crossover(self, population):
         partner_index = np.random.randint(0, self.dimension)
