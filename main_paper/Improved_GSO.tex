@@ -1,5 +1,6 @@
 \documentclass[a4paper]{article}
 \usepackage[utf8]{vietnam}
+\usepackage{graphicx}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{mdsymbol}
@@ -13,6 +14,7 @@
 
 \usepackage{filecontents}
 \usepackage[numbers]{natbib}
+\graphicspath{{./}}	
 
 \begin{document} 
 
@@ -224,9 +226,132 @@ where $\mu$ and $v$ are chosen from Normal distribution: \\ \\
 $\mu \sim N(0, \sigma _{\mu}^2)$ and $v \sim N(0, \sigma _{v}^2)$ \\ \\
 $ \sigma _{\mu} = [\frac{\Gamma (1 + \beta).\sin (\pi .\beta/2)}{\Gamma ((1 + \beta)/2).\beta .2^{(\beta - 1)/2}}]^{1/\beta}$ \\ \\
 $ \sigma _{v} = 1$ \\ \\
+A step size avoiding Levy-Flight jumping out the search space is defined by: \\ \\
+$Levy = random(size(D)) \oplus L(\beta)$ \\ \\
+with $L(\beta) \sim \frac{\mu}{|v|^{1/\beta}}(X_i - X^*)$ \\ \\
+where $D$ is the dimension of search space, $X_i$ and $X^*$ is the current solution and best solution respectively. \\
+The mathematical model of exploitation phase is modified and represented as follows: \\ \\
+\[
+    f(x)= 
+\begin{cases}
+    X(t+1) = (X(t) + \mu sign[rand - 0.5])$ $\oplus  Levy,& \text{if } p\geq 0.5\\
+    X(t+1) = D'.e^{bl}.\cos(2\pi l) + X^*(t),              & \text{otherwise}
+\end{cases}
+\]
 \subsubsection{Improvement based on Crossover}
-\subsubsection{New random solution strategy}
-
+Although original WOA is good at searching for new solution in search space with its \textit{shrinking encircling mechanism} and \textit{spiral updating position}, the problems of biodiversity reduction in large-scale global optimization still need to be tackled. Improvement based on quadratic interpolation was introduced by .... in .... to tackle this problem. However, the fitness values used in expressions seem no relevant to the features of new solution. That may lead to a worse rather than potential offspring. \\ 
+In this paper, we propose a new operation inspired by the behaviors of humpback whales when they migrate to tropical water and give birth in mating seasons. The operation is called $Crossover$ deprived from two-point crossover which is widely used in Generic Algorithm (GA). \\
+In $Crossover$ operation, the current best solution $X*$ and a random solution in current population $Y$ are chosen as parents, and then they generate an offspring $Z$ (new solution) following two-point crossover rule which is presented as follows: \\ \\
+$Z[0,i] = Y[0,i]$ \\ \\
+$Z[i,j] = X^*[i,j]$ \\ \\
+$Z[j,D-1] = Y[j,D-1]$ \\ \\
+where two crossover points are selected randomly in range $[0, D-1]$ with D is the dimension of solution and under the condition $j > i$. \\
+\begin{center} 
+\includegraphics[scale=0.2]{2pcrossover} \\
+Two-points crossover. \textit{Source: Wikipedia}
+\end{center}
+The best solution $X^*$ plays an important guiding role in this operation, which help WOA explore a new potential solution as an offspring. Apart from this, the randomly chosen solution $Y$ keeps maintaining the diversity of population and enhancing exploitation. For implementing $Crossover$ operation, see the detail in \textbf{Algorithm 3}. \\ \\
+\begin{algorithm}[H]
+\SetAlgoLined
+ Initialize the whales population $X = \left\{X_i| i = 1, 2, ..., n\right\}$ within $[x_{min}, x_{max}]^D$ randomly. \\
+ Calculate fitness of each solution (whale) \\
+ $X^*\gets$ the best solution \\
+ \For{$Iteration\gets0$ to $Iteration_{max}$}
+ {
+ 	Begin updating positions: \\
+ 	\For{whale in population}
+ 	{
+		Update parameters $a, A, C, l, p_1$ and $p_2$; \\ 	
+		\eIf {$p_1 < 0.5$}
+		{
+			\eIf{$|A| < 1$}
+			{
+				Shrinking encircling mechanism based on Levy-Flight;\\
+			}
+			{	
+				Search for prey (exploration phase);\\
+			 
+			}
+		}
+		{
+			\eIf{$p_2 < 0.6$}
+			{
+				Updating by Crossover; \\
+			}
+			{
+				Spiral updating position; \\
+			}
+		} 	
+ 	}
+ 	Evaluate population: fix if any solutions go beyond the boundary;\\
+ 	Recompute the fitness of all solutions;\\
+ 	Check and update $X^*$ if a better solution is found. \\
+}
+ 	
+ \KwResult{$X^*, f(X^*)$}
+ \caption{Modified Whale Optimization Algorithm (MWOA)}
+\end{algorithm}
 \subsection{Improved Galactic Swarm Optimization}
-
+\begin{algorithm}[H]
+\SetAlgoLined
+ initialization: $x_j^{(i)}$, $v_j^{(i)}$, $p_j^{(i)}$, $g_j^{(i)}$, within $[x_{min}, x_{max}]^D$ randomly. \\
+ initialization: $v^{(i)}, p^{(i)}, g$ within $[x_{min}, x_{max}]^D$ randomly. \\
+ \For{$Iteration\gets0$ to $Iteration_{max}$}
+ {
+ 	Begin PSO: Level 1 \\
+	\For{$i\gets1$ to $M$}
+	{
+		\For{$k\gets0$ to $L_1$}
+		{
+			\For{$j\gets1$ to $N$}
+			{
+				$v_j^{(i)}\gets\omega_1v_j^{(i)} + c_1r_1(p_j^{(i)} - x_j^{(i)}) + c_2r_2(g^{(i)} - x_j^{(i)})$; \\
+				$x_j^{(i)}\gets$ $x_j^{(i)} + v_j^{(i)}$; \\
+				\If {$f(x_j^{(i)}) < f(p_j^{(i)})$}
+				{
+					$p_j^{(i)}\gets$ $x_j^{(i)}$; \\
+					\If {$f(p_j^{(i)}) < f(g^{(i)})$}
+					{
+						$g^{(i)}\gets$ $p_j^{(i)}$;
+					}
+				}
+			}
+		}
+	}
+	Begin MOWA: Level 2 \\
+	Initialize Swarm $y^{(i)} = g^{(i)}: i = 1, 2, ..., M;$ \\
+	\For{$k\gets0$ to $L2$}
+	{
+		\For{$i\gets1$ to $M$}
+		{
+			Update parameters $a, A, C, l, p_1$ and $p_2$; \\ 	
+			\eIf {$p_1 < 0.5$}
+			{
+				\eIf{$|A| < 1$}
+				{
+					Shrinking encircling mechanism based on Levy-Flight;\\
+				}
+				{	
+					Search for prey (exploration phase);\\
+			 
+				}
+			}
+			{
+				\eIf{$p_2 < 0.6$}
+				{
+					Updating by Crossover; \\
+				}
+				{
+					Spiral updating position; \\
+				}
+			}
+			Evaluate population: fix if any solutions go beyond the boundary;\\
+ 			Recompute the fitness of all solutions;\\
+ 			Check and update $g$ if a better solution is found. \\			
+		}
+	} 	
+ }
+ \KwResult{$g, f(g)$}
+ \caption{Modified Galactic Swarm Optimization (MGSO)}
+\end{algorithm}
 \end{document}

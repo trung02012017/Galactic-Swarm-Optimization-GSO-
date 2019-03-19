@@ -34,7 +34,8 @@ class WhaleOptimizationAlgorithm(object):
         return D*np.exp(b*l)*np.cos(2*np.pi*l) + best_solution
 
     def explore_new_prey(self, current_whale, C, A):
-        random_whale = np.random.uniform(self.range0, self.range1, self.dimension)
+        random_index = np.random.randint(0, self.population_size, size=1)
+        random_whale = self.population[random_index]
         D = np.abs(C*random_whale - current_whale)
         return random_whale - A*D
 
