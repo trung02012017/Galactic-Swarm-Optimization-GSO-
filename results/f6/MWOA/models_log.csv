@@ -1,0 +1,4 @@
+"combination = [fitness_function_name, dimension, range0, range1, population_size, max_ep, function evaluation]",total_time,gBest_fitness
+"['f6', 20, -100, 100, 100, 400, 40000]",9.96,5.11340737868026e-05
+"['f6', 30, -100, 100, 100, 400, 40000]",16.08,7.984758537705442e-05
+"['f6', 50, -100, 100, 150, 400, 60000]",19.9,9.85476916967326e-05

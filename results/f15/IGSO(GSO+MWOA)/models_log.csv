@@ -1,0 +1,4 @@
+"combination = [fitness_function_name, dimension, range0, range1, m, n, l1, l2, max_ep, c1 ,c2, function evaluation]",total_time,gBest_fitness
+"['f15', 20, -5.12, 5.12, 20, 10, 10, 300, 5, 2.05, 2.05, 40000]",15.87,0.0
+"['f15', 30, -5.12, 5.12, 20, 10, 10, 300, 5, 2.05, 2.05, 40000]",14.36,0.0
+"['f15', 50, -5.12, 5.12, 25, 8, 10, 400, 5, 2.05, 2.05, 60000]",73.44,0.0

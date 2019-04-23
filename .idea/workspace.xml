@@ -3,15 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="32b04e91-52ca-41a1-a701-f4e7cb81b945" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(PSO-MWOA).csv" beforeDir="false" afterPath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(PSO-MWOA).csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_paper/Improved_GSO.aux" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/Improved_GSO.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(MWOA-MWOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(MWOA-PSO).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(PSO-MWOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/PSO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/resultGSO(MWOA-MWOA).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/resultGSO(MWOA-PSO).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/resultGSO(PSO-MWOA).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-MWOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-PSO).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(PSO-MWOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/PSO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(MWOA-MWOA).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(MWOA-PSO).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(PSO-MWOA).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/GSO(PSO-PSO).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/GSO(PSO-WOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/GSO(WOA-PSO).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/GSO(WOA-WOA).py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/PSO.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/resultGSO(PSO-PSO).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/resultGSO(PSO-WOA).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/resultGSO(WOA-PSO).csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/resultGSO(WOA-WOA).csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main_paper/Improved_GSO.log" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/Improved_GSO.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_paper/Improved_GSO.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/Improved_GSO.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_paper/Improved_GSO.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/Improved_GSO.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_paper/Improved_GSO.tex" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/Improved_GSO.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_paper/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/main_paper/debug.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/papers/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/papers/debug.log" afterDir="false" />
     </list>
@@ -25,11 +45,11 @@
     <session id="321338950">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="21" />
+          <entry key="project.closed" value="23" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="7" />
           <entry key="project.open.time.21" value="1" />
-          <entry key="project.open.time.24" value="2" />
+          <entry key="project.open.time.24" value="3" />
           <entry key="project.open.time.25" value="2" />
           <entry key="project.open.time.26" value="3" />
           <entry key="project.open.time.27" value="1" />
@@ -38,7 +58,7 @@
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="22" />
+          <entry key="project.opened" value="23" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -64,50 +84,97 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="2091263860">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="10" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.24" value="1" />
+          <entry key="project.open.time.26" value="1" />
+          <entry key="project.open.time.27" value="3" />
+          <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.39" value="1" />
+          <entry key="project.opened" value="10" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="csv" value="78" />
+          <entry key="json" value="6" />
+          <entry key="py" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JSON" value="6" />
+          <entry key="PLAIN_TEXT" value="78" />
+          <entry key="Python" value="24" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="csv" value="4" />
+          <entry key="json" value="357" />
+          <entry key="py" value="3522" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JSON" value="357" />
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="3522" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py">
+        <entry file="file://$PROJECT_DIR$/code/GSO(PSO-MWOA).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="40" column="52" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="296">
+              <caret line="153" column="40" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="153" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py">
+        <entry file="file://$PROJECT_DIR$/code/GSO(PSO-PSO).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="127">
+              <caret line="154" column="40" lean-forward="true" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py">
+        <entry file="file://$PROJECT_DIR$/code/MWOA.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
+            <state relative-caret-position="331">
+              <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/code/GSO3(PSO-WOA).py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="149" column="48" lean-forward="true" selection-start-line="149" selection-start-column="48" selection-end-line="149" selection-end-column="48" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
-                <marker date="1552978667197" expanded="true" signature="615:624" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-PSO).py">
+        <entry file="file://$PROJECT_DIR$/code/GSO(PSO-OMWOA).py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="127">
+              <caret line="152" column="40" lean-forward="true" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -116,13 +183,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(PSO-MWOA).py">
+        <entry file="file://$PROJECT_DIR$/parameter_setup/params_demo.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="85">
+              <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/parameter_setup/params.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="3" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -153,15 +226,12 @@
         <option value="$PROJECT_DIR$/code/GSO(PSO-WOA).py" />
         <option value="$PROJECT_DIR$/code/GSO(WOA-PSO).py" />
         <option value="$PROJECT_DIR$/code/GSO(WOA-WOA).py" />
-        <option value="$PROJECT_DIR$/code/GSO(PSO-PSO).py" />
         <option value="$PROJECT_DIR$/code/WOA.py" />
         <option value="$PROJECT_DIR$/code/resultGSO(WOA-PSO).csv" />
         <option value="$PROJECT_DIR$/code/GSO(MWOA-PSO).py" />
-        <option value="$PROJECT_DIR$/code/GSO(PSO-MWOA).py" />
         <option value="$PROJECT_DIR$/code/GSO(MWOA-MWOA).py" />
         <option value="$PROJECT_DIR$/code/resultGSO(WOA-WOA).csv" />
         <option value="$PROJECT_DIR$/code/resultGSO(MWOA-MWOA).csv" />
-        <option value="$PROJECT_DIR$/code/MWOA.py" />
         <option value="$PROJECT_DIR$/code/resultGSO(PSO-MWOA).csv" />
         <option value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(PSO-MWOA).csv" />
         <option value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(MWOA-MWOA).csv" />
@@ -170,6 +240,25 @@
         <option value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py" />
         <option value="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py" />
         <option value="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py" />
+        <option value="$PROJECT_DIR$/code/OMWOA_GSO.py" />
+        <option value="$PROJECT_DIR$/code/WOA_GSO.py" />
+        <option value="$PROJECT_DIR$/code/PSO_GSO.py" />
+        <option value="$PROJECT_DIR$/code/results_processing.py" />
+        <option value="$PROJECT_DIR$/code/MWOA_GSO.py" />
+        <option value="$PROJECT_DIR$/results/f1/GSO1(PSO+PSO)/stability_igso.csv" />
+        <option value="$PROJECT_DIR$/results/f1/GSO3(GSO+WOA)/stability_gso3.csv" />
+        <option value="$PROJECT_DIR$/results/f1/GSO4(GSO+OMWOA)/stability_gso4.csv" />
+        <option value="$PROJECT_DIR$/results/f1/IGSO(GSO+MWOA)/stability_igso.csv" />
+        <option value="$PROJECT_DIR$/results/f1/MWOA/stability_igso.csv" />
+        <option value="$PROJECT_DIR$/results/f14/MWOA/stability_igso.csv" />
+        <option value="$PROJECT_DIR$/results/f24/GSO1(PSO+PSO)/stability_igso.csv" />
+        <option value="$PROJECT_DIR$/code/pyplot.py" />
+        <option value="$PROJECT_DIR$/parameter_setup/params_demo.json" />
+        <option value="$PROJECT_DIR$/code/GSO(PSO-MWOA).py" />
+        <option value="$PROJECT_DIR$/code/GSO(PSO-PSO).py" />
+        <option value="$PROJECT_DIR$/code/MWOA.py" />
+        <option value="$PROJECT_DIR$/code/GSO3(PSO-WOA).py" />
+        <option value="$PROJECT_DIR$/code/GSO(PSO-OMWOA).py" />
       </list>
     </option>
   </component>
@@ -184,7 +273,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,25 +288,13 @@
             <path>
               <item name="Galactic-Swarm-Optimization-GSO-" type="b2602c69:ProjectViewProjectNode" />
               <item name="Galactic-Swarm-Optimization-GSO-" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="GSO(LevyWOA_and_PSO)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galactic-Swarm-Optimization-GSO-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galactic-Swarm-Optimization-GSO-" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="GSO(ModifiedWOA_and_PSO)" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Galactic-Swarm-Optimization-GSO-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Galactic-Swarm-Optimization-GSO-" type="462c0819:PsiDirectoryNode" />
-              <item name="code" type="462c0819:PsiDirectoryNode" />
-              <item name="GSO(WOA_and_PSO)" type="462c0819:PsiDirectoryNode" />
+              <item name="parameter_setup" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -237,8 +313,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.GSO(PSO-MWOA)">
-    <configuration name="GSO(MWOA-MWOA) (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.GSO(PSO-OMWOA)">
+    <configuration name="GSO3(PSO-WOA)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Galactic-Swarm-Optimization-GSO-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,53 +322,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(MWOA-MWOA).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="GSO(MWOA-MWOA)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Galactic-Swarm-Optimization-GSO-" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-MWOA).py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="GSO(PSO-MWOA) (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="Galactic-Swarm-Optimization-GSO-" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(PSO-MWOA).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO3(PSO-WOA).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -309,11 +343,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(PSO-MWOA).py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(PSO-MWOA).py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -322,7 +356,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="WOA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="GSO(PSO-OMWOA)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Galactic-Swarm-Optimization-GSO-" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -330,11 +364,53 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/GSO(WOA_and_PSO)" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(PSO-OMWOA).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="GSO(PSO-PSO)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Galactic-Swarm-Optimization-GSO-" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/GSO(PSO-PSO).py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="MWOA" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Galactic-Swarm-Optimization-GSO-" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/MWOA.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -344,19 +420,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.WOA" />
-      <item itemvalue="Python.GSO(PSO-MWOA) (1)" />
-      <item itemvalue="Python.GSO(MWOA-MWOA) (1)" />
       <item itemvalue="Python.GSO(PSO-MWOA)" />
-      <item itemvalue="Python.GSO(MWOA-MWOA)" />
+      <item itemvalue="Python.GSO(PSO-PSO)" />
+      <item itemvalue="Python.MWOA" />
+      <item itemvalue="Python.GSO3(PSO-WOA)" />
+      <item itemvalue="Python.GSO(PSO-OMWOA)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GSO(PSO-OMWOA)" />
+        <item itemvalue="Python.GSO3(PSO-WOA)" />
+        <item itemvalue="Python.MWOA" />
+        <item itemvalue="Python.GSO(PSO-PSO)" />
         <item itemvalue="Python.GSO(PSO-MWOA)" />
-        <item itemvalue="Python.GSO(MWOA-MWOA)" />
-        <item itemvalue="Python.GSO(MWOA-MWOA) (1)" />
-        <item itemvalue="Python.GSO(PSO-MWOA) (1)" />
-        <item itemvalue="Python.WOA" />
       </list>
     </recent_temporary>
   </component>
@@ -384,14 +460,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21130952" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.38169643" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33064517" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33387098" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,152 +484,293 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/copy.py">
+    <entry file="file://$PROJECT_DIR$/results/f2/GSO1(PSO+PSO)/stability_igso.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-156">
-          <caret line="131" column="4" selection-start-line="131" selection-start-column="4" selection-end-line="131" selection-end-column="4" />
+        <state relative-caret-position="-801" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f1/IGSO(GSO+MWOA)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="40" column="84" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/PSO1.py" />
-    <entry file="file://$PROJECT_DIR$/code/PSO_1.py" />
-    <entry file="file://$PROJECT_DIR$/../BNN_GoogleTrace/BNN/encoder_decoder.py">
+    <entry file="file://$PROJECT_DIR$/results/f1/GSO4(GSO+OMWOA)/stability_gso4.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-357" />
+        <state relative-caret-position="118">
+          <caret line="40" column="103" selection-start-line="40" selection-start-column="103" selection-end-line="40" selection-end-column="103" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/submission2.csv" />
-    <entry file="file://$PROJECT_DIR$/code/result.csv" />
-    <entry file="file://$PROJECT_DIR$/code/main.py" />
-    <entry file="file://$PROJECT_DIR$/code/result1.csv" />
-    <entry file="file://$PROJECT_DIR$/code/levy_woa.py" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(PSO-PSO).csv" />
-    <entry file="file://$PROJECT_DIR$/code/GSO.py" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(PSO-WOA).csv" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-PSO).py" />
-    <entry file="file://$PROJECT_DIR$/code/WOA.py" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(WOA-PSO).csv" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(WOA-PSO).py" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(WOA-WOA).csv" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(WOA-WOA).py" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-WOA).py" />
-    <entry file="file://$PROJECT_DIR$/code/PSO.py" />
-    <entry file="file://$PROJECT_DIR$/code/MWOA.py" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(MWOA-MWOA).csv" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(MWOA-PSO).csv" />
-    <entry file="file://$PROJECT_DIR$/code/resultGSO(PSO-MWOA).csv" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-MWOA).py" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(MWOA-MWOA).py" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(MWOA-PSO).py" />
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/PSO.py">
+    <entry file="file://$PROJECT_DIR$/results/f1/GSO3(GSO+WOA)/stability_gso3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="40" column="103" selection-start-line="40" selection-start-column="103" selection-end-line="40" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f2/GSO3(GSO+WOA)/stability_gso3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f3/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-663" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f4/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-801" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f5/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f6/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-801" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f7/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f8/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f9/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f10/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f11/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f12/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f13/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-801" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f14/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-107">
+          <caret line="40" column="78" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f14/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f14/GSO3(GSO+WOA)/stability_gso3.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-801" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f14/GSO4(GSO+OMWOA)/stability_gso4.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f15/GSO1(PSO+PSO)/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-408" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f15/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f16/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f17/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f21/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f22/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f23/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f24/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f25/MWOA/stability_igso.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-787" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/results_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1036">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/GA.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2350">
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/dimension_20.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(MWOA-MWOA).py">
+    <entry file="file://$PROJECT_DIR$/results/stability/dimension_20.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/stability/f1_dimension_20.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/stability/f1_dimension_50.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Roaming/Python/Python37/site-packages/numpy/core/_methods.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="15" column="47" lean-forward="true" selection-start-line="15" selection-start-column="47" selection-end-line="15" selection-end-column="47" />
+        <state relative-caret-position="124">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-MWOA).py">
+    <entry file="file://$PROJECT_DIR$/results/f25/GSO1(PSO+PSO)/stability_igso.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="-612" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="81" column="59" selection-start-line="81" selection-start-column="59" selection-end-line="81" selection-end-column="59" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(WOA_and_PSO)/GSO(PSO-PSO).py">
+    <entry file="file://$PROJECT_DIR$/results/f24/GSO1(PSO+PSO)/stability_igso.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="77" column="77" selection-start-line="77" selection-start-column="77" selection-end-line="77" selection-end-column="77" />
+        <state relative-caret-position="277">
+          <caret line="58" column="111" selection-start-line="58" selection-start-column="111" selection-end-line="58" selection-end-column="111" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/resultGSO(MWOA-MWOA).csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(MWOA-MWOA).csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="85" selection-start-column="85" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/GSO(PSO-MWOA).py">
+    <entry file="file://$PROJECT_DIR$/parameter_setup/params.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="3" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f1/IGSO(GSO+MWOA)/error_IGSO['f1', 50, -100, 100, 25, 8, 10, 400, 5, 2.05, 2.05, 60000].csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6600" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f1/IGSO(GSO+MWOA)/models_log.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/parameter_setup/params_demo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-MWOA).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="153" column="40" lean-forward="true" selection-start-line="132" selection-start-column="12" selection-end-line="153" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/results/f1/IGSO(GSO+MWOA)/error_IGSO['f1', 100, -100, 100, 25, 10, 20, 600, 5, 2.05, 2.05, 100000].csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5103" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-PSO).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="154" column="40" lean-forward="true" selection-start-line="154" selection-start-column="40" selection-end-line="154" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/code/GSO3(PSO-WOA).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="149" column="48" lean-forward="true" selection-start-line="149" selection-start-column="48" selection-end-line="149" selection-end-column="48" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/resultGSO(PSO-MWOA).csv">
+    <entry file="file://$PROJECT_DIR$/code/GSO(PSO-OMWOA).py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret column="85" selection-start-column="85" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/resultGSO(PSO-MWOA).csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(MWOA-PSO).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="127">
+          <caret line="152" column="40" lean-forward="true" selection-start-line="152" selection-start-column="40" selection-end-line="152" selection-end-column="40" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/GSO(PSO-MWOA).py">
+    <entry file="file://$PROJECT_DIR$/results/f1/GSO1(PSO+PSO)/error_GSO1['f1', 100, -100, 100, 25, 10, 20, 600, 5, 2.05, 2.05, 2.05, 2.05, 100000].csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-10010" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(ModifiedWOA_and_PSO)/MWOA.py">
+    <entry file="file://$PROJECT_DIR$/results/f1/MWOA/error_MWOA['f1', 100, -100, 100, 200, 500, 100000].csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="40" column="52" lean-forward="true" selection-start-line="39" selection-start-column="8" selection-end-line="40" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-8258" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(LevyWOA_and_PSO)/MWOA.py">
+    <entry file="file://$PROJECT_DIR$/code/MWOA.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/code/GSO(WOA_and_PSO)/WOA.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-            <marker date="1552978667197" expanded="true" signature="615:624" ph="..." />
-          </folding>
+        <state relative-caret-position="331">
+          <caret line="174" column="40" lean-forward="true" selection-start-line="174" selection-start-column="40" selection-end-line="174" selection-end-column="40" />
         </state>
       </provider>
     </entry>
